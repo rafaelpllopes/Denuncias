@@ -1,0 +1,33 @@
+{
+  "name": "denuncias",
+  "version": "1.0.0",
+  "description": "Sistema para gerenciamento de denuncias",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelpllopes/denuncias.git"
+  },
+  "keywords": [
+    "denuncia",
+    "gerenciar"
+  ],
+  "author": "Rafael Pereira de Lacerda Lopes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafaelpllopes/denuncias/issues"
+  },
+  "homepage": "https://github.com/rafaelpllopes/denuncias#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "consign": "^0.1.6",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^3.18.0",
+    "mysql": "^2.17.1",
+    "sha256": "^0.2.0"
+  }
+}
