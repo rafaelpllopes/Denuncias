@@ -1,4 +1,3 @@
-
 const AssuntosController = require('../controllers/assuntos-controller');
 const assuntos = new AssuntosController();
 

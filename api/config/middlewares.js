@@ -3,11 +3,11 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const compression = require("compression");
 const helmet = require("helmet");
-const fs = require('fs');
+const { readFileSync } = require('fs');
 const sha256 = require('sha256');
 
 module.exports = app => {
-    const secret = fs.readFileSync("secret.txt", "utf8");
+    const secret = readFileSync("secret.txt", "utf8");
     app.set('secret', sha256(secret));
 
     const corsOptions = {

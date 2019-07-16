@@ -8,7 +8,9 @@ class UnidadesDao {
     getUnidades() {
         return new Promise((resolve, reject) => {
             this.db.connect();
-            this.db.query('SELECT * FROM unidades', (error, results, fields) => {
+            let query = 'SELECT * FROM unidades';
+
+            this.db.query(query, (error, results, fields) => {
                     if (error) {
                         reject('Não foi possivel carregar as unidades');
                     }
